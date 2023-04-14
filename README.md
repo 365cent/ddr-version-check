@@ -7,6 +7,10 @@ sudo chmod u+x ddr.sh
 sudo ./ddr.sh
 ```
 
+## Dependency
+mbw - for memory benchmarking
+bc - for numerical comparison
+
 ## Sample output
 The tool will output one of the following messages:
 - DDR3 memory detected
