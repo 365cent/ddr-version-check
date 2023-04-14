@@ -6,6 +6,21 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+# Check if bc is installed, install if necessary
+if ! command -v bc &> /dev/null
+then
+    if command -v apt &> /dev/null
+    then
+        apt install bc -y
+    elif command -v yum &> /dev/null
+    then
+        yum install bc -y
+    else
+        echo "Could not install bc, please install it manually"
+        exit 1
+    fi
+fi
+
 # Check if mbw is installed, install if necessary
 if ! command -v mbw &> /dev/null
 then
