@@ -4,7 +4,7 @@ This tool uses the mbw command to check the version of DDR memory on your machin
 ## Usage
 ```bash
 sudo chmod u+x ddr.sh
-sudo ddr.sh
+sudo ./ddr.sh
 ```
 
 ## Sample output
