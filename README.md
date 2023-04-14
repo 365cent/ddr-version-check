@@ -9,6 +9,7 @@ sudo ./ddr.sh
 
 ## Dependency
 mbw - for memory benchmarking
+
 bc - for numerical comparison
 
 ## Sample output
